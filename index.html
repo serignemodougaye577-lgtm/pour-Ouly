@@ -1501,61 +1501,22 @@
            BOUTON "NON"
         ====================================================== */
 
-        function sayNo() {
+     function sayNo() {
 
-            const button =
-                document.getElementById(
-                    "noButton"
-                );
+    const numero = "221785875116";
 
+    const message =
+        "Je préfère qu'on prenne notre temps 🌱❤️";
 
-            const message =
-                document.getElementById(
-                    "noMessage"
-                );
+    const whatsapp =
+        "https://wa.me/" +
+        numero +
+        "?text=" +
+        encodeURIComponent(message);
 
+    window.open(whatsapp, "_blank");
 
-            const messages = [
-
-                "Tu es sûre ? 👀",
-
-                "Hmm... réfléchis encore 😅",
-
-                "Tu veux vraiment cliquer là ?",
-
-                "Je vais faire comme si je n'avais rien vu 😂",
-
-                "Dernière chance... ❤️"
-
-            ];
-
-
-            const randomMessage =
-                messages[
-                    Math.floor(
-                        Math.random()
-                        * messages.length
-                    )
-                ];
-
-
-            message.textContent =
-                randomMessage;
-
-
-            const x =
-                Math.random() * 120 - 60;
-
-
-            const y =
-                Math.random() * 80 - 40;
-
-
-            button.style.transform =
-                `translate(${x}px, ${y}px)`;
-
-        }
-
+}
 
         /* =====================================================
            BOUTON "OUI"
