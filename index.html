@@ -1563,19 +1563,6 @@
 
         function sayYes() {
 
-            const screen =
-                document.getElementById(
-                    "successScreen"
-                );
-
-
-            screen.classList.add(
-                "show"
-            );
-
-
-            createHearts();
-            
     const numero = "221785875116";
 
     const message =
@@ -1587,9 +1574,9 @@
         "?text=" +
         encodeURIComponent(message);
 
-    window.location.href = whatsapp;
+    window.open(whatsapp, "_blank");
 
-        }
+}
 
 
         /* =====================================================
